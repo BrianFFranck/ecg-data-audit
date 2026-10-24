@@ -1,7 +1,7 @@
 # Declaração de Direitos Autorais e Propriedade Intelectual Académica
 
 **Projeto:** Auditoria e Preparação de Dados Clínicos de ECG  
-**Unidade Curricular:** PCiência de Dados para a Saúde  
+**Unidade Curricular:** Ciência de Dados para a Saúde  
 **Instituição:** Universidade Lusófona de Humanidades e Tecnologias  
 **Ano Letivo:** 2026/2027
 
