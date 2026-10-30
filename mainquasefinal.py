@@ -394,7 +394,7 @@ def analisar_e_exportar(original, preparado, missing):
         f"Registos com pelo menos uma anotação de qualidade: {anotados} ({anotados/n*100:.2f}%)",
         f"Registos com validação humana: {validados} ({validados/n*100:.2f}%)",
         "A ausência de anotação não significa que o ECG esteja livre de problemas.",
-        "Uma diferença entre grupos não demonstra causalidade; esta análise é observacional.",
+        "Uma diferença entre grupos não demonstra causalidade, esta análise é observacional.",
         "",
         "DUPLICADOS E PRESERVAÇÃO",
         "Não foram removidas linhas. Um doente com vários registos não representa, por si só, duplicação.",
