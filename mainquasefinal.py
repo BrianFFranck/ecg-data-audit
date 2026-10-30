@@ -194,10 +194,23 @@ def frequencias_categoricas(df):
 
 
 def guardar_tabela(tabela, nome):
+    """
+     Guarda uma tabela num ficheiro CSV na pasta definida por OUTPUT_DIR.
+     em codificação UTF-8 (utf-8-sig) para garantir uma melhor compatibilidade com o Excel.
+     """
     tabela.to_csv(OUTPUT_DIR / nome, index=False, encoding="utf-8-sig")
 
 
 def fmt_num(valor, casas=2):
+    """
+    Formata um valor numérico com um número definido de casas decimais.
+    Caso o valor seja NA, devolve a expressão 'não disponível'.
+    Parâmetros:
+        valor: valor numérico a formatar.
+        casas: número de casas decimais pretendido (por defeito,2).
+    Devolve:
+        Uma string com o valor formatado ou 'não disponível'.
+    """
     if pd.isna(valor):
         return "não disponível"
     return f"{valor:.{casas}f}"
@@ -258,7 +271,7 @@ def analisar_e_exportar(original, preparado, missing):
         preparado["idade_analitica"]
     )
     stats_imc = estatisticas_numericas(preparado["imc"])
-
+    # Variaveis complementares para a análise
     anotados = int(preparado["tem_anotacao_qualidade"].sum())
     validados = int(preparado["validado_humano"].sum())
 
